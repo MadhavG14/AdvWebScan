@@ -6,4 +6,6 @@
 
 pip install requests dnspython ssl nmap subprocess WAFW00F </B>
 
+<b> IF U FIND ERROR WHILE INSTALLING USE sudo apt install <module_name> </b> 
+
 USE IT FOR RESEARCH PURPOSES ONLY !!!
