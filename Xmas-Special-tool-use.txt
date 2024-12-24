@@ -1,0 +1,81 @@
+
+==============================
+🎄 Christmas Pentesting Tool 🎄
+==============================
+
+This guide will walk you through running the Christmas-themed Advanced Pentesting Tool. 
+
+---
+1️⃣ **Dependencies Installation**:
+   Ensure you have Python installed, along with the required libraries. Run the following commands:
+
+   ```bash
+   pip install requests dnspython ssl nmap pwntools metasploit ascii_magic colorama pyfiglet playsound
+   sudo apt-get install ncat hydra
+   ```
+
+   Place the `jingle_bells.mp3` file in the same directory as the script.
+
+---
+2️⃣ **Script Execution**:
+   Save the script as `christmas_pentest_tool.py`. Run the tool using:
+
+   ```bash
+   python3 christmas_pentest_tool.py
+   ```
+
+---
+3️⃣ **Inputs Required**:
+   - Enter the website URL you want to scan (e.g., `https://example.com`).
+   - Provide custom Nmap switches for detailed scanning (e.g., `-sV --script=vuln`).
+
+---
+4️⃣ **Features**:
+   - **HTTP Header Analysis**: Fetches and displays the HTTP headers of the target website.
+   - **IP Address Resolution**: Resolves the target's IP address.
+   - **DNS Lookup**: Fetches DNS A records.
+   - **WAF Detection**: Detects if the target is protected by a Web Application Firewall.
+   - **Nmap Scanning**: Performs detailed port and service scans with user-specified options.
+   - **Christmas Effects**: Displays festive banners, ASCII art, and plays Christmas jingles.
+   - **HTML Report Generation**: Saves a detailed pentesting report as `pentest_report.html`.
+
+---
+5️⃣ **Sample Run**:
+   ```
+   python3 christmas_pentest_tool.py
+
+   Enter the website URL to scan (e.g., https://example.com): https://example.com
+   Enter custom Nmap switches (e.g., -sV --script=vuln): -sV --script=vuln
+
+   🎄 [HTTP Headers] 🎄
+   Server: Apache
+   Content-Type: text/html
+
+   🎁 IP Address of https://example.com: 93.184.216.34
+
+   🎄 DNS A Record for https://example.com:
+   93.184.216.34
+
+   🎄 Checking for WAF... 🎄
+   WAF detected: Cloudflare
+
+   🎁 Running Nmap Scan on 93.184.216.34... 🎁
+   PORT    STATE SERVICE  VERSION
+   80/tcp  open  http     Apache 2.4.41
+   443/tcp open  https    OpenSSL 1.1.1
+
+   🎄 Report saved as 'pentest_report.html' 🎄
+   ```
+
+---
+6️⃣ **Output**:
+   - All findings will be displayed in the terminal.
+   - An HTML report will be generated with detailed results.
+
+---
+7️⃣ **Notes**:
+   - Ensure you have legal permission to test any website or system.
+   - Some features (e.g., WAF detection) require external tools like `wafw00f` to be installed.
+   - For the sound feature, ensure your system supports audio playback.
+
+Enjoy pentesting with a festive flair! 🎁🎄
