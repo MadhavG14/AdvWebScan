@@ -13,6 +13,8 @@ from playsound import playsound
 from pwn import *
 import nmap
 
+#Dependencies
+
 
 def display_banner():
     """Display Christmas-themed ASCII art banner"""
